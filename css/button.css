@@ -8,39 +8,28 @@ font-face {
     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg"); 
 }   
 
-.card {
-    display: block;    
+.button {
+    width: 120px;
+    height: 40px;
+    font: 400, 14px/16px, "Roboto";
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #3AE4DF 0%, #7A88FF 104.29%);
+    border-radius: 5px;
 }
 
-.card__image {
-    margin-bottom: 24px;
-    width: 260px;
-    height: 240px;
-    background-color: grey;
-}
-
-.card__text {
-    font-family: "Roboto";
-    font-style: normal;
+.button--long {
+    width: 140px;
+    height: 40px;
     font-size: 14px;
-    line-height: 20px;
-    font-weight: 500;
+    line-height: 16px;
 }
 
-.card__text--big {
-    font-size: 18px;
-    line-height: 28px;
-}
+.button--large {
+    width: 200px;
+    height: 60px;
+    font: 400, 14px/16px, "Roboto";
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #3AE4DF 0%, #7A88FF 104.29%);
+    border-radius: 5px;
 
-.card__text--bold {
-    font-weight: 700;    
-}
-
-.card__price {
-    margin-top: 20px;
-    font-family: "Roboto";
-}
-
-.card__button {
-    margin-top: 2px;
-}
+} 
