@@ -43,12 +43,19 @@ body {
 
 .header__logo {
     justify-items: flex-start;
-    align-content: center;
+    display: flex;
     background: linear-gradient(90deg, #3AE4DF 20%, #7A88FF 80%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 7.5%;
+    height: 100%;
+}
+
+@media (min-width: 1024px), (max-width: 1268px) {
+    .header__logo {
+        width: 9%;
+    }
 }
 
 .logo__text {
@@ -57,14 +64,26 @@ body {
     font-weight: bold;
     font-size: 26px;
     line-height: 32px;
+    align-content: center;
 }
 
 .navigation {
-    font: normal, normal, 13px/15px, "Roboto";
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
     display: flex;
     flex-direction: row;
     padding: 12px 0 0 0;
     width: 52%;
+}
+
+@media (min-width: 1024px), (max-width: 1268px) {
+    .navigation {
+        margin-left: 2%;
+        width: 54%;
+        font-size: 12px;
+    }
 }
 
 .navigation__list {
@@ -76,7 +95,7 @@ body {
 }
 
 .navigation__link {
-    align-items: center;
+    align-content: center;
     font-family: "Roboto";
 }
 
@@ -88,6 +107,13 @@ body {
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
+}
+
+@media (min-width: 1024px), (max-width: 1268px) {
+    .certificate {
+        margin-left: 14%;
+        width: 15%;
+    }
 }
 
 .certificate__image {
