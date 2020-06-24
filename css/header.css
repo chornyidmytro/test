@@ -106,7 +106,7 @@ body {
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 @media (min-width: 1024px), (max-width: 1268px) {
@@ -118,6 +118,7 @@ body {
 
 .certificate__image {
     align-items: center;
+    margin-right: 0.4rem;
 }
 
 .certificate__text {
