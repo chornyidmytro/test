@@ -1,12 +1,4 @@
-@font-face {
-    font-family: "Roboto"; 
-    src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot"); 
-    src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix") format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2") format("woff2"), 
-    url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff") format("woff"), 
-    url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf") format("truetype"), 
-    url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg"); 
-}   
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 @font-face {
     font-family: 'Product Sans';
@@ -43,12 +35,19 @@ body {
 
 .header__logo {
     justify-items: flex-start;
-    align-content: center;
+    display: flex;
     background: linear-gradient(90deg, #3AE4DF 20%, #7A88FF 80%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 7.5%;
+    height: 100%;
+}
+
+@media (min-width: 1024px), (max-width: 1268px) {
+    .header__logo {
+        width: 9%;
+    }
 }
 
 .logo__text {
@@ -57,14 +56,26 @@ body {
     font-weight: bold;
     font-size: 26px;
     line-height: 32px;
+    align-content: center;
 }
 
 .navigation {
-    font: normal, normal, 13px/15px, "Roboto";
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
     display: flex;
     flex-direction: row;
     padding: 12px 0 0 0;
     width: 52%;
+}
+
+@media (min-width: 1024px), (max-width: 1268px) {
+    .navigation {
+        margin-left: 2%;
+        width: 54%;
+        font-size: 12px;
+    }
 }
 
 .navigation__list {
@@ -76,7 +87,7 @@ body {
 }
 
 .navigation__link {
-    align-items: center;
+    align-content: center;
     font-family: "Roboto";
 }
 
@@ -87,11 +98,19 @@ body {
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+@media (min-width: 1024px), (max-width: 1268px) {
+    .certificate {
+        margin-left: 14%;
+        width: 15%;
+    }
 }
 
 .certificate__image {
     align-items: center;
+    margin-right: 0.4rem;
 }
 
 .certificate__text {
@@ -105,9 +124,4 @@ body {
     margin-left: 2%;
 }
 
-.intro {
-    width: 100%;
-    height: 700px;
-    background: linear-gradient(90deg, #FFFCEB 0%, #EAFFFE 100%);
-}
 
