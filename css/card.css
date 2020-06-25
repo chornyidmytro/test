@@ -10,16 +10,21 @@
     font: normal 32px/42px 'Roboto', sans-serif;
 }
 
+.card__block {
+    margin: 7% 11.4% 0 10%;
+}
 
 .card {
-    display: block;    
+    display: inline-block;
+    margin: 0 0 0 1.7%;
+    width: 260px;    
 }
 
 .card__image {
     margin-bottom: 24px;
     width: 260px;
     height: 240px;
-    background-color: grey;
+    background-color: white;
 }
 
 .card__text {
@@ -28,6 +33,10 @@
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
+}
+
+.card__info {
+    margin-top: 4%;
 }
 
 .card__text--big {
@@ -45,5 +54,5 @@
 }
 
 .card__button {
-    margin-top: 2px;
+    margin-top: 8%;
 }
